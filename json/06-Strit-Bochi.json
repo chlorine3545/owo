@@ -1,0 +1,71 @@
+{
+    "Strit-Bochi": {
+        "type": "image",
+        "container": [
+            {
+                "text": "波奇-哼哼",
+                "icon": "<img src='https://cdn.smartcis.cn/gh/chlorine3545/owo@main/img/Strit-Bochi/001.webp'>"
+            },
+            {
+                "text": "波奇-打咩",
+                "icon": "<img src='https://cdn.smartcis.cn/gh/chlorine3545/owo@main/img/Strit-Bochi/002.webp'>"
+            },
+            {
+                "text": "波奇-牡蛎",
+                "icon": "<img src='https://cdn.smartcis.cn/gh/chlorine3545/owo@main/img/Strit-Bochi/003.webp'>"
+            },
+            {
+                "text": "波奇-垃圾桶",
+                "icon": "<img src='https://cdn.smartcis.cn/gh/chlorine3545/owo@main/img/Strit-Bochi/004.webp'>"
+            },
+            {
+                "text": "波奇-什么省的",
+                "icon": "<img src='https://cdn.smartcis.cn/gh/chlorine3545/owo@main/img/Strit-Bochi/005.webp'>"
+            },
+            {
+                "text": "波奇-什么",
+                "icon": "<img src='https://cdn.smartcis.cn/gh/chlorine3545/owo@main/img/Strit-Bochi/006.webp'>"
+            },
+            {
+                "text": "波奇-拍薯片",
+                "icon": "<img src='https://cdn.smartcis.cn/gh/chlorine3545/owo@main/img/Strit-Bochi/007.webp'>"
+            },
+            {
+                "text": "波奇-消沉",
+                "icon": "<img src='https://cdn.smartcis.cn/gh/chlorine3545/owo@main/img/Strit-Bochi/008.webp'>"
+            },
+            {
+                "text": "波奇-黑线",
+                "icon": "<img src='https://cdn.smartcis.cn/gh/chlorine3545/owo@main/img/Strit-Bochi/009.webp'>"
+            },
+            {
+                "text": "波奇-害羞",
+                "icon": "<img src='https://cdn.smartcis.cn/gh/chlorine3545/owo@main/img/Strit-Bochi/0010.webp'>"
+            },
+            {
+                "text": "波奇-波门",
+                "icon": "<img src='https://cdn.smartcis.cn/gh/chlorine3545/owo@main/img/Strit-Bochi/011.webp'>"
+            },
+            {
+                "text": "波奇-贴贴",
+                "icon": "<img src='https://cdn.smartcis.cn/gh/chlorine3545/owo@main/img/Strit-Bochi/012.webp'>"
+            },
+            {
+                "text": "波奇-暗中观察",
+                "icon": "<img src='https://cdn.smartcis.cn/gh/chlorine3545/owo@main/img/Strit-Bochi/013.webp'>"
+            },
+            {
+                "text": "波奇-烧了",
+                "icon": "<img src='https://cdn.smartcis.cn/gh/chlorine3545/owo@main/img/Strit-Bochi/014.webp'>"
+            },
+            {
+                "text": "波奇-切腹",
+                "icon": "<img src='https://cdn.smartcis.cn/gh/chlorine3545/owo@main/img/Strit-Bochi/015.webp'>"
+            },
+            {
+                "text": "波奇-溜溜球",
+                "icon": "<img src='https://cdn.smartcis.cn/gh/chlorine3545/owo@main/img/Strit-Bochi/016.webp'>"
+            }
+        ]
+    }
+}
