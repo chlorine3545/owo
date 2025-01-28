@@ -3,7 +3,7 @@ name: Merge JSON Files
 on:
   push:
     paths:
-      - "json/**/*.json"
+      - 'json/**/*.json'
   workflow_dispatch:
 
 jobs:
@@ -13,28 +13,14 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
-
+      
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: '20'
 
       - name: Merge JSON files
-        run: |
-          # Create a new object to store all emoji collections
-          echo "{}" > owo.json
-          for f in json/*.json; do
-            # Extract content without the outer braces and combine
-            content=$(cat "$f" | sed '1d;$d')
-            # Add to main file, preserving format
-            if [ -s owo.json ]; then
-              # If file is not empty, add comma before new content
-              sed -i '$ s/}$/,'"$content"'}/' owo.json
-            else
-              # If file is empty, just add content
-              echo "{$content}" > owo.json
-            fi
-          done
+        run: node scripts/merge.js
 
       - name: Minify JSON
         run: |
