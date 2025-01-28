@@ -12,5 +12,11 @@ files.forEach(file => {
     Object.assign(merged, content);
 });
 
-// Write merged content
-fs.writeFileSync('owo.json', JSON.stringify(merged, null, 2));
+// Create dist directory if it doesn't exist
+const distDir = path.join(process.cwd(), 'dist');
+if (!fs.existsSync(distDir)) {
+    fs.mkdirSync(distDir);
+}
+
+// Write merged content to dist/owo.json
+fs.writeFileSync(path.join(distDir, 'owo.json'), JSON.stringify(merged, null, 2));
