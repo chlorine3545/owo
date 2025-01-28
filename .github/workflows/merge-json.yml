@@ -3,19 +3,23 @@ name: Merge JSON Files
 on:
   push:
     paths:
-      - "json/**/*.json"
+      - 'json/**/*.json'
   workflow_dispatch:
 
 jobs:
   merge-and-build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
-
+        with:
+          fetch-depth: 2  # To get the previous commit for the message
+      
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: '20'
 
       - name: Merge JSON files
         run: node scripts/merge.js
@@ -24,3 +28,13 @@ jobs:
         run: |
           npx json-minify dist/owo.json > dist/owo.min.json
           mv dist/owo.min.json dist/owo.json
+
+      - name: Create Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TIMESTAMP=$(date -u +"%Y%m%d%H%M%S")
+          COMMIT_MSG=$(git log -1 --pretty=%B)
+          gh release create "Commit-$TIMESTAMP" dist/owo.json \
+            --title "Commit: $TIMESTAMP" \
+            --notes "$COMMIT_MSG"
